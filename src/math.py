@@ -1,3 +1,5 @@
+from typing import Union
+
 def add(x: int, y: int) -> int:
     """add two numbers together
 
@@ -35,3 +37,15 @@ def multiply(x: int, y: int) -> int:
                     int: product of x and y
     """
     return x * y
+
+def divide(x: int, y: int) -> Union[int, float]:
+    """divide two numbers together
+
+    Args:
+                    x (int): first number in the multiplication
+                    y (int): second number in the multiplication
+
+    Returns:
+                    int: division of x and y
+    """
+    return x / y
